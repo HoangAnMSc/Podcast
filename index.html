@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Podcast</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" language="javascript" src="style.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,10 +22,10 @@
                 <nav>
                     <ul id="MenuItems">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html">Pisodes</a></li>
-                        <li><a href="">Trending</a></li>
+                        <li><a href="trending.html">Trending</a></li>
                         <li><a href="">PlayList</a></li>
-                        <li><a href="account.html">Account</a></li>
+                        <li><a href="">Rating Website</a></li>
+                        <li><a href="account.html">Login</a></li>
                     </ul>
                 </nav>
                 <img src="images/menu.png" class="menu-icon" 
@@ -37,7 +38,61 @@
     <div class="col-3">
     	<img src="images/banner.svg">
     </div>
-    
+    <!------------------Search Bar------------------->
+   	<h2 >Tìm kiếm bài hát</h2>
+	<form>
+  		<input type="text" name="search" placeholder="Search..">
+  		<button type="submit"><i class="fa fa-search"></i></button>
+	</form>
+   
+    <!-----------------Slide show-------------------->
+<h2 class="title">Top Trending</h2>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"><h2>TOP 1</h2></div>
+  <img src="images/5.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"><h2>TOP 2</h2></div>
+  <img src="images/4.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"><h2>TOP 3</h2></div>
+  <img src="images/6.jpg" style="width:100%">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<script>
+	var slideIndex = 0;
+showSlides();
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2500); // Change image every 2 seconds
+}
+</script>
     <!-- ------------- Top Trending ---------------- -->
     
         <h2 class="title">Top Trending</h2>

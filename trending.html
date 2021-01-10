@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Red Puma T-Shirt - A&Dtore</title>
+    <title>All Products - A&D Store</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
@@ -20,10 +20,11 @@
             <nav>
                 <ul id="MenuItems">
                     <li><a href="index.html">Trang chủ</a></li>
-                        <li><a href="products.html">Sản phẩm</a></li>
+                        <li><a href="trending.html">Sản phẩm</a></li>
                         <li><a href="">Hot Sale</a></li>
                         <li><a href="">Chăm sóc khách hàng</a></li>
                         <li><a href="account.html">Đăng nhập</a></li>
+                </ul>
                 </ul>
             </nav>
             <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
@@ -32,68 +33,25 @@
     </div>
     </div>
 
-    <!-- ---------- single Products detail ----------- -->
 
-    <div class="small-container single-product">
-        <div class="row">
-            <div class="col-2">
-                <img src="images/gallery-1.jpg" width="100%" id="productImg">
+
+    <div class="small-container">
+
+        <div class="row row-2">
+            <h2>Tất cả</h2>
+            <select>
+                <option>Mặc định</option>
+                <option>Đang khuyến mãi</option>
+                <option>Theo giá cả</option>
+                <option>Theo phổ biến</option>
+                <option>Theo đánh giá khách hàng</option>
                 
-                <div class="small-img-row">
-                    <div class="small-img-rol">
-                        <img src="images/gallery-1.jpg" width="100%" class="small-img">
-                    </div>
-                    <div class="small-img-rol">
-                        <img src="images/gallery-2.jpg" width="100%" class="small-img">
-                    </div>
-                    <div class="small-img-rol">
-                        <img src="images/gallery-3.jpg" width="100%" class="small-img">
-                    </div>
-                    <div class="small-img-rol">
-                        <img src="images/gallery-4.jpg" width="100%" class="small-img">
-                    </div>
-                </div>
-
-            </div>
-            <div class="col-2">
-                <p>Trang chủ / T-Shirt</p>
-                <h1>Red Puma T-Shirt</h1>
-                <h4>300.000 VND</h4>
-                <select>
-                    <option>Select Size</option>
-                    <option>XXL</option>
-                    <option>XL</option>
-                    <option>Large</option>
-                    <option>Medium</option>
-                    <option>Small</option>
-                    </section>
-                    <input type="number" value="1">
-                    <a href="" class="btn">Thêm vào giỏ hàng</a>
-                    <h3>Thông tin sản phẩm
-                        <i class="fa fa-indent"></i>
-                    </h3>
-                    <br>
-                    <p>Một chiếc áo thao phong cách, phù hợp với các quý ông lịch lãm nhưng không kém phần sang trọng
-                    chiếu áo được thiết kế thoải mái, với chất liệu cotton thoáng mát sẽ là một sự lựa chọn không thể thiếu cho
-                    gia đình bạn.</p>
-            </div>
+            </select>
         </div>
-    </div>
-
-    <!-- ----- title------------- -->
-    <div class="small-container">
-        <div class="row row2">
-            <h2>Sản phẩm liên quan</h2>
-            <p>Xem thêm</p>
-        </div>
-    </div>
-
-<!-- ---------------Products----------------- -->
-    <div class="small-container">
 
         <div class="row">
             <div class="col-4">
-                <img src="images/product-1.jpg">
+                <a href="products_detal.html"><img src="images/product-1.jpg"></a>
                 <h4>Red Puma T-Shirt</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
@@ -106,7 +64,7 @@
             </div>
             <div class="col-4">
                 <img src="images/product-2.jpg">
-                <h4>Black Sneaker HRX</h4>
+                <h4>Black Sneaker NRX</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -114,11 +72,11 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star-half-o"></i>
                 </div>
-                <p>990.000 VND</p>
+                <p>990.000</p>
             </div>
             <div class="col-4">
                 <img src="images/product-3.jpg">
-                <h4>Red Printed T-Shirt</h4>
+                <h4>Gray cotton pant</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -126,11 +84,11 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star-half-o"></i>
                 </div>
-                <p>$50.00</p>
+                <p>$390.000 VND</p>
             </div>
             <div class="col-4">
                 <img src="images/product-4.jpg">
-                <h4>Red Printed T-Shirt</h4>
+                <h4>Blue T-Shirt</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -138,7 +96,7 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star-half-o"></i>
                 </div>
-                <p>$50.00</p>
+                <p>300.000 VND</p>
             </div>
         </div>
         <div class="row">
@@ -251,7 +209,7 @@
     </div>
     <!-- ------------footer----------- -->
 
-   <div class="footer">
+    <div class="footer">
         <div class="container">
             <div class="row">
                 <div class="footer-col-1">
@@ -303,30 +261,6 @@
                 else {
                     MenuItems.style.maxHeight = "0px";
                 }
-            }
-
-        </script>
-
-<!-- ------------------- JS for  product gallery------------------------         -->
-        <script>
-            var ProductImg = document.getElementById("productImg");
-            var SmallImg = document.getElementsByClassName("small-img");
-
-            SmallImg[0].onclick = function()
-            {
-                ProductImg.src = SmallImg[0].src;
-            }
-            SmallImg[1].onclick = function()
-            {
-                ProductImg.src = SmallImg[1].src;
-            }
-            SmallImg[2].onclick = function()
-            {
-                ProductImg.src = SmallImg[2].src;
-            }
-            SmallImg[3].onclick = function()
-            {
-                ProductImg.src = SmallImg[3].src;
             }
 
         </script>
